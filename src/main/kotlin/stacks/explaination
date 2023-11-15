@@ -1,0 +1,57 @@
+A stack is an ordered collection of elements where elements are only
+added and removed from the same end.
+
+you add at the top and remove from the top.
+(LIFO) Last in, first out.
+
+I can view the fist element in the stack using Peek.
+
+to perform operations like push, pop, and random access it takes O(1)
+search is O(N).
+
+What is a tail pointer?
+
+***
+The characteristic that makes something a "stack"
+is that you can only add and remove elements from the same end.
+It doesn't matter how you implement it, a "stack" is just an
+abstract interface.
+***
+
+recursion and stacks are similar.
+
+Usually, there will be some component of the problem that involves elements
+in the input interacting with each other.
+
+Interacting could mean
+ 1. matching elements together.
+ 2. querying some property such as "how far is the next largest element".
+ 3. evaluating a mathematical equation given as a string.
+ 4. just comparing elements against each other.
+ 5. any other abstract interaction.
+
+
+
+// Declaration: Java supports multiple implementations, but we will be using
+// the Stack interface with the Stack implementation. Specify the data type
+Stack<Integer> stack = new Stack<>();
+
+// Pushing elements:
+stack.push(1);
+stack.push(2);
+stack.push(3);
+
+// Popping elements:
+stack.pop(); // 3
+stack.pop(); // 2
+
+// Check if empty
+stack.empty(); // false
+
+// Check element at top
+stack.peek(); // 1
+
+// Get size
+stack.size(); // 1
+
+String questions involving stacks are common.
